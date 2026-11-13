@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NOVA X — Spela, upptäck och ha kul</title>
+<style>
+:root{--bg:#090714;--panel:#151126;--panel2:#21183a;--purple:#a855f7;--cyan:#42e8ff;--text:#f7f2ff;--muted:#b8abc9}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% -20%,#39205d 0,transparent 55%),var(--bg);color:var(--text);font:16px/1.5 system-ui,Segoe UI,sans-serif}
+header{position:sticky;top:0;z-index:5;background:#0b0817eF;backdrop-filter:blur(14px);border-bottom:1px solid #382653;padding:16px max(5vw,20px);display:flex;align-items:center;gap:22px}
+.logo{font-weight:1000;font-size:27px;letter-spacing:2px;color:#fff;text-shadow:0 0 16px #a855f7}.logo span{color:var(--cyan)}
+nav{display:flex;gap:16px}nav a{color:var(--muted);text-decoration:none}nav a:hover{color:white}
+.search{margin-left:auto;max-width:340px;width:100%;background:#171128;border:1px solid #483064;border-radius:30px;padding:11px 16px;color:white;outline:none}
+main{max-width:1200px;margin:auto;padding:34px 22px 70px}
+.hero{border:1px solid #56327a;border-radius:26px;padding:38px;overflow:hidden;background:linear-gradient(115deg,#281344,#15112c 55%,#102a42);box-shadow:0 18px 60px #0008;position:relative}
+.hero:after{content:"✦";position:absolute;right:8%;top:8px;font-size:150px;color:#ffffff12}
+.eyebrow{color:var(--cyan);font-weight:800;letter-spacing:3px;font-size:12px}.hero h1{font-size:clamp(34px,6vw,58px);line-height:1.05;margin:10px 0}.hero p{color:#d3c6e5;max-width:560px;margin-bottom:0}
+.sectionhead{display:flex;justify-content:space-between;align-items:end;margin:36px 0 16px}.sectionhead h2{margin:0;font-size:25px}.sectionhead small{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.card{background:linear-gradient(160deg,#1c1530,#100d1e);border:1px solid #392750;border-radius:19px;overflow:hidden;transition:.2s;box-shadow:0 10px 25px #0004}
+.card:hover{transform:translateY(-4px);border-color:#a855f7;box-shadow:0 14px 35px #8b35d455}
+.cover{height:145px;display:flex;align-items:center;justify-content:center;text-align:center;font-size:27px;font-weight:950;letter-spacing:1px;text-shadow:0 3px 15px #000b;position:relative;overflow:hidden}
+.cover:before,.cover:after{content:"";position:absolute;border:2px solid #ffffff30;border-radius:50%;width:180px;height:180px;transform:rotate(25deg)}
+.cover:after{width:240px;height:80px;border-radius:45%;transform:rotate(-25deg)}
+.cover span{position:relative;z-index:1}
+.c1{background:linear-gradient(135deg,#087c89,#24d6b0 48%,#12365c)}.c2{background:linear-gradient(135deg,#2162b9,#6b5ce7,#e5a84a)}.c3{background:linear-gradient(135deg,#282b45,#6975d8,#1ec5c2)}.c4{background:linear-gradient(135deg,#a72b83,#f06d9d,#f8c85d)}.c5{background:linear-gradient(135deg,#6531a6,#d74d94,#f2a83a)}.c6{background:linear-gradient(135deg,#101f46,#1675ba,#47d5e9)}.c7{background:linear-gradient(135deg,#17634f,#5dbb73,#b6d56c)}
+.info{padding:16px}.info h3{margin:0 0 5px;font-size:18px}.info p{margin:0 0 14px;color:var(--muted);font-size:13px;min-height:40px}
+.play{display:inline-block;text-decoration:none;color:#080513;font-weight:900;background:linear-gradient(90deg,var(--cyan),#b7a0ff);padding:9px 17px;border-radius:30px}.play:hover{filter:brightness(1.12)}
+footer{text-align:center;color:#847894;padding:30px 15px;border-top:1px solid #281d3a;font-size:13px}
+@media(max-width:650px){header{flex-wrap:wrap}nav{order:3;width:100%}.search{max-width:none}.hero{padding:27px}.cover{height:125px}}
+</style>
+</head>
+<body>
+<header><div class="logo">NOVA <span>X</span></div><nav><a href="#">Hem</a><a href="#spel">Spel</a><a href="#favoriter">Favoriter</a></nav><input class="search" id="search" placeholder="Sök efter ett spel..." aria-label="Sök efter ett spel"></header>
+<main>
+<section class="hero"><div class="eyebrow">DIN NÄSTA SPELUPPLEVELSE</div><h1>Välkommen till NOVA X</h1><p>Spela, upptäck och ha kul. Hitta ditt nästa favoritspel bland våra utvalda webbläsarspel.</p></section>
+<div class="sectionhead" id="spel"><h2>Utvalda spel</h2><small>7 spel att upptäcka</small></div>
+<section class="grid" id="games">
+<article class="card" data-name="wave rider"><div class="cover c1"><span>WAVE RIDER</span></div><div class="info"><h3>Wave Rider</h3><p>Surfa fram genom banor och undvik hinder.</p><a class="play" href="https://hotgames.io/wave-rider" target="_blank" rel="noopener">Spela</a></div></article>
+<article class="card" data-name="golf hit"><div class="cover c2"><span>GOLF HIT</span></div><div class="info"><h3>Golf Hit</h3><p>Slå bollen så långt du kan och sikta mot rekord.</p><a class="play" href="https://1games.io/Golf-Hit" target="_blank" rel="noopener">Spela</a></div></article>
+<article class="card" data-name="stickman parkour"><div class="cover c3"><span>STICKMAN<br>PARKOUR</span></div><div class="info"><h3>Stickman Parkour</h3><p>Hoppa, spring och ta dig igenom banorna.</p><a class="play" href="https://baddygames.com/games/stickman-parkour/" target="_blank" rel="noopener">Spela</a></div></article>
+<article class="card" data-name="candy blast"><div class="cover c4"><span>CANDY BLAST</span></div><div class="info"><h3>Candy Blast</h3><p>Matcha färgglada godisbitar och klara nivåer.</p><a class="play" href="https://gameforge.com/en-US/littlegames/candy-blast/" target="_blank" rel="noopener">Spela</a></div></article>
+<article class="card" data-name="steal eggs"><div class="cover c5"><span>STEAL EGGS</span></div><div class="info"><h3>Steal Eggs</h3><p>Samla ägg och husdjur i ett fartfyllt spel.</p><a class="play" href="https://www.crazygames.com/game/steal-a-eggs" target="_blank" rel="noopener">Spela</a></div></article>
+<article class="card" data-name="racing online racing legends"><div class="cover c6"><span>RACING<br>ONLINE!</span></div><div class="info"><h3>Racing: Online!</h3><p>Racingkandidat till vår Racing Legends-kategori.</p><a class="play" href="https://www.crazygames.com/game/racing-online-fph" target="_blank" rel="noopener">Spela</a></div></article>
+<article class="card" data-name="bloxd io skyblock"><div class="cover c7"><span>BLOXD.IO<br>SKYBLOCK</span></div><div class="info"><h3>Bloxd.io – Skyblock</h3><p>Bygg och utveckla din egen ö i Skyblock-läget.</p><a class="play" href="https://bloxd.io/" target="_blank" rel="noopener">Spela</a></div></article>
+</section>
+</main><footer>NOVA X · Spela smartare. Spela tillsammans.</footer>
+<script>
+const search=document.getElementById('search');
+search.addEventListener('input',()=>{const q=search.value.trim().toLowerCase();document.querySelectorAll('.card').forEach(card=>{card.hidden=!card.dataset.name.includes(q)});});
+</script>
+</body></html>
