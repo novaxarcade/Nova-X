@@ -1,85 +1,52 @@
 <!doctype html>
 <html lang="sv">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#100b22">
-  <meta name="description" content="NOVA X – hitta ditt nästa favoritspel.">
-  <title>NOVA X — Play beyond</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-*{box-sizing:border-box} :root{--bg:#0d0919;--panel:#171027;--purple:#a855f7;--pink:#ec4899;--text:#f8f5ff;--muted:#aaa1bd}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif;overflow-x:hidden}a{color:inherit;text-decoration:none}.ambient{position:absolute;filter:blur(100px);opacity:.18;pointer-events:none;border-radius:50%;z-index:-1}.ambient-one{width:400px;height:400px;background:#852cff;top:80px;left:-180px}.ambient-two{width:450px;height:450px;background:#ec4899;top:350px;right:-250px}.topbar{height:82px;display:flex;align-items:center;justify-content:space-between;max-width:1180px;padding:0 28px;margin:auto;border-bottom:1px solid #ffffff12}.brand{display:flex;gap:10px;align-items:center;font:800 20px Orbitron,sans-serif;letter-spacing:1px}.brand b{color:#c084fc}.brand-mark{width:31px;height:31px;display:grid;place-items:center;background:linear-gradient(135deg,#a855f7,#ec4899);border-radius:9px;color:white;font-size:17px}.topbar nav{display:flex;gap:32px;color:#c4bbd3;font-size:13px}.topbar nav a:hover,footer a:hover{color:#d8a5ff}.top-cta{border:1px solid #a855f766;border-radius:30px;padding:11px 17px;font-size:12px;font-weight:700}.top-cta span{color:#d8a5ff;margin-left:7px}.hero{max-width:1180px;min-height:510px;margin:auto;padding:75px 28px 65px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center}.eyebrow{font-size:10px;letter-spacing:2.5px;color:#c084fc;font-weight:700}.pulse{display:inline-block;width:7px;height:7px;border-radius:50%;background:#c084fc;box-shadow:0 0 12px #c084fc;margin-right:9px}.hero h1{font:800 clamp(42px,6vw,72px)/1.08 Orbitron,sans-serif;letter-spacing:-3px;margin:22px 0}.hero h1 span,.section-heading h2 span,.banner h2 span{background:linear-gradient(90deg,#c084fc,#f472b6);-webkit-background-clip:text;background-clip:text;color:transparent}.hero-copy>p{color:var(--muted);max-width:440px;line-height:1.8;font-size:14px}.primary-btn{display:inline-flex;gap:26px;align-items:center;margin-top:24px;padding:15px 20px;border-radius:7px;background:linear-gradient(100deg,#9333ea,#db3f9d);font-size:11px;letter-spacing:1px;font-weight:800;box-shadow:0 8px 30px #a855f733}.primary-btn:hover{transform:translateY(-2px);filter:brightness(1.12)}.hero-stats{display:flex;align-items:center;gap:18px;margin-top:48px}.hero-stats div{display:grid;gap:5px}.hero-stats strong{font:700 17px Orbitron;color:#d8b4fe}.hero-stats small{font-size:10px;color:#8f86a1}.hero-stats i{height:27px;width:1px;background:#ffffff25}.hero-art{height:350px;position:relative;display:grid;place-items:center}.planet{width:210px;height:210px;border-radius:50%;position:relative;display:grid;place-items:center;background:radial-gradient(circle at 35% 28%,#f0abfc,#a855f7 35%,#52218e 70%,#1a1033);box-shadow:inset -20px -20px 40px #080510,0 0 70px #a855f755;transform:rotate(-15deg)}.planet span{font:800 52px Orbitron;color:#fff;text-shadow:0 0 22px #fff8}.planet-ring{position:absolute;width:310px;height:82px;border:8px solid #d8b4fe;border-left-color:#a855f7;border-bottom-color:#6b21a8;border-radius:50%;transform:rotate(-22deg);box-shadow:0 0 22px #a855f777}.planet-shine{position:absolute;top:30px;left:42px;width:40px;height:18px;border-radius:50%;background:#fff8;filter:blur(8px)}.orbit{position:absolute;border:1px solid #c084fc30;border-radius:50%;transform:rotate(-25deg)}.orbit-a{width:350px;height:150px}.orbit-b{width:420px;height:230px;transform:rotate(35deg)}.float-chip{position:absolute;padding:10px 13px;background:#211535;border:1px solid #a855f766;border-radius:7px;font:700 9px Orbitron;letter-spacing:1px;box-shadow:0 8px 25px #0008}.chip-one{top:45px;right:15px}.chip-two{bottom:44px;left:5px}.spark{position:absolute;color:#e9b7ff;text-shadow:0 0 16px #c084fc}.s1{top:40px;left:70px;font-size:23px}.s2{bottom:35px;right:70px;font-size:30px}.s3{top:140px;right:0;font-size:15px}.section{max-width:1180px;margin:auto;padding:55px 28px 85px}.section-heading{display:flex;align-items:end;justify-content:space-between;gap:25px}.section-heading h2{font:700 clamp(22px,3vw,34px) Orbitron;margin:12px 0 0;letter-spacing:-1px}.search{display:flex;align-items:center;gap:10px;width:260px;border:1px solid #ffffff20;background:#171027;border-radius:7px;padding:0 13px;color:#c084fc}.search span{font-size:23px}.search input{width:100%;padding:13px 0;background:none;border:0;outline:0;color:white;font:13px Inter}.search input::placeholder{color:#817891}.filters{display:flex;gap:9px;flex-wrap:wrap;margin:28px 0}.filter{border:1px solid #ffffff1c;background:#171027;color:#bdb3cd;border-radius:30px;padding:10px 16px;font:600 11px Inter;cursor:pointer}.filter.active,.filter:hover{background:#8b36c6;color:white;border-color:#b66bf1}.filter span{font-size:9px;opacity:.75}.game-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.game-card{position:relative;overflow:hidden;border:1px solid #ffffff18;border-radius:10px;background:linear-gradient(145deg,#211633,#120d20);transition:.2s}.game-card:hover{transform:translateY(-4px);border-color:#b66bf1aa;box-shadow:0 12px 35px #0005}.game-art{height:145px;display:grid;place-items:center;position:relative;overflow:hidden;background:radial-gradient(circle at 50% 40%,var(--glow),transparent 60%),linear-gradient(135deg,#211632,#100b1b)}.game-art .symbol{font-size:56px;filter:drop-shadow(0 0 20px var(--glow));transform:rotate(-8deg)}.game-tag{position:absolute;left:13px;top:12px;font-size:9px;text-transform:uppercase;letter-spacing:1px;color:#e9d5ff;background:#ffffff12;padding:6px 8px;border-radius:4px}.fav{position:absolute;right:12px;top:10px;border:0;background:#130d22bb;color:#d8b4fe;border-radius:50%;width:31px;height:31px;font-size:17px;cursor:pointer}.fav.on{color:#fb70c5}.game-info{padding:15px}.game-info h3{margin:0 0 7px;font:700 14px Orbitron}.game-info p{margin:0;color:#9f95af;font-size:11px;line-height:1.5;min-height:34px}.game-bottom{display:flex;justify-content:space-between;align-items:center;margin-top:14px}.game-bottom small{color:#9f8eae;font-size:10px}.play-link{background:#8b36c6;padding:8px 12px;border-radius:5px;font-size:10px;font-weight:700}.play-link:hover{background:#a855f7}.empty{color:#bdb3cd;text-align:center;padding:40px}.fine-print{color:#776e86;font-size:10px;margin-top:18px}.banner{max-width:1124px;margin:0 auto 80px;padding:35px 45px;display:flex;align-items:center;gap:35px;border:1px solid #a855f744;border-radius:13px;background:radial-gradient(circle at 10% 50%,#742bb244,transparent 40%),#171027}.banner-orb{flex:none;width:90px;height:90px;display:grid;place-items:center;border-radius:50%;background:linear-gradient(135deg,#a855f7,#ec4899);font:800 26px Orbitron;box-shadow:0 0 35px #a855f755}.banner h2{font:800 25px/1.2 Orbitron;margin:10px 0}.banner p{font-size:11px;color:#aaa1bd}.banner .primary-btn{margin:0 0 0 auto;white-space:nowrap}footer{max-width:1180px;margin:auto;padding:25px 28px 35px;border-top:1px solid #ffffff16;display:flex;align-items:center;justify-content:space-between;color:#827991;font-size:10px}footer .brand{color:white;font-size:15px}footer .brand-mark{width:25px;height:25px;font-size:13px}@media(max-width:760px){.topbar{height:68px}.topbar nav{display:none}.hero{grid-template-columns:1fr;padding-top:55px}.hero-art{height:280px;grid-row:1}.hero-copy{grid-row:2}.planet{width:155px;height:155px}.planet-ring{width:240px;height:65px}.planet span{font-size:40px}.orbit-a{width:270px}.orbit-b{width:320px}.chip-one{right:8%}.chip-two{left:8%}.section-heading{align-items:stretch;flex-direction:column}.search{width:100%}.game-grid{grid-template-columns:repeat(2,1fr)}.banner{margin:0 18px 55px;padding:25px;gap:18px;flex-wrap:wrap}.banner-orb{width:65px;height:65px;font-size:20px}.banner .primary-btn{margin-left:0}footer{gap:15px;flex-wrap:wrap}}@media(max-width:440px){.game-grid{grid-template-columns:1fr}.game-art{height:165px}.hero h1{letter-spacing:-2px}.hero-stats{gap:10px}.hero-stats small{font-size:9px}.banner{display:block}.banner-orb{margin-bottom:20px}.banner .primary-btn{margin-top:12px}footer{font-size:9px}}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NOVA X — Spela, upptäck och ha kul</title>
+<style>
+:root{--bg:#090714;--panel:#151126;--panel2:#21183a;--purple:#a855f7;--cyan:#42e8ff;--text:#f7f2ff;--muted:#b8abc9}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% -20%,#39205d 0,transparent 55%),var(--bg);color:var(--text);font:16px/1.5 system-ui,Segoe UI,sans-serif}
+header{position:sticky;top:0;z-index:5;background:#0b0817eF;backdrop-filter:blur(14px);border-bottom:1px solid #382653;padding:16px max(5vw,20px);display:flex;align-items:center;gap:22px}
+.logo{font-weight:1000;font-size:27px;letter-spacing:2px;color:#fff;text-shadow:0 0 16px #a855f7}.logo span{color:var(--cyan)}
+nav{display:flex;gap:16px}nav a{color:var(--muted);text-decoration:none}nav a:hover{color:white}
+.search{margin-left:auto;max-width:340px;width:100%;background:#171128;border:1px solid #483064;border-radius:30px;padding:11px 16px;color:white;outline:none}
+main{max-width:1200px;margin:auto;padding:34px 22px 70px}
+.hero{border:1px solid #56327a;border-radius:26px;padding:38px;overflow:hidden;background:linear-gradient(115deg,#281344,#15112c 55%,#102a42);box-shadow:0 18px 60px #0008;position:relative}
+.hero:after{content:"✦";position:absolute;right:8%;top:8px;font-size:150px;color:#ffffff12}
+.eyebrow{color:var(--cyan);font-weight:800;letter-spacing:3px;font-size:12px}.hero h1{font-size:clamp(34px,6vw,58px);line-height:1.05;margin:10px 0}.hero p{color:#d3c6e5;max-width:560px;margin-bottom:0}
+.sectionhead{display:flex;justify-content:space-between;align-items:end;margin:36px 0 16px}.sectionhead h2{margin:0;font-size:25px}.sectionhead small{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.card{background:linear-gradient(160deg,#1c1530,#100d1e);border:1px solid #392750;border-radius:19px;overflow:hidden;transition:.2s;box-shadow:0 10px 25px #0004}
+.card:hover{transform:translateY(-4px);border-color:#a855f7;box-shadow:0 14px 35px #8b35d455}
+.cover{height:145px;display:flex;align-items:center;justify-content:center;text-align:center;font-size:27px;font-weight:950;letter-spacing:1px;text-shadow:0 3px 15px #000b;position:relative;overflow:hidden}
+.cover:before,.cover:after{content:"";position:absolute;border:2px solid #ffffff30;border-radius:50%;width:180px;height:180px;transform:rotate(25deg)}
+.cover:after{width:240px;height:80px;border-radius:45%;transform:rotate(-25deg)}
+.cover span{position:relative;z-index:1}
+.c1{background:linear-gradient(135deg,#087c89,#24d6b0 48%,#12365c)}.c2{background:linear-gradient(135deg,#2162b9,#6b5ce7,#e5a84a)}.c3{background:linear-gradient(135deg,#282b45,#6975d8,#1ec5c2)}.c4{background:linear-gradient(135deg,#a72b83,#f06d9d,#f8c85d)}.c5{background:linear-gradient(135deg,#6531a6,#d74d94,#f2a83a)}.c6{background:linear-gradient(135deg,#101f46,#1675ba,#47d5e9)}.c7{background:linear-gradient(135deg,#17634f,#5dbb73,#b6d56c)}
+.info{padding:16px}.info h3{margin:0 0 5px;font-size:18px}.info p{margin:0 0 14px;color:var(--muted);font-size:13px;min-height:40px}
+.play{display:inline-block;text-decoration:none;color:#080513;font-weight:900;background:linear-gradient(90deg,var(--cyan),#b7a0ff);padding:9px 17px;border-radius:30px}.play:hover{filter:brightness(1.12)}
+footer{text-align:center;color:#847894;padding:30px 15px;border-top:1px solid #281d3a;font-size:13px}
+@media(max-width:650px){header{flex-wrap:wrap}nav{order:3;width:100%}.search{max-width:none}.hero{padding:27px}.cover{height:125px}}
 </style>
 </head>
 <body>
-  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
-  <header class="topbar">
-    <a class="brand" href="#" aria-label="NOVA X startsida"><span class="brand-mark">N</span><span>NOVA <b>X</b></span></a>
-    <nav><a href="#games">Spel</a><a href="#categories">Kategorier</a><a href="#about">Om NOVA X</a></nav>
-    <a class="top-cta" href="#games">Hitta spel <span>↗</span></a>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="hero-copy">
-        <div class="eyebrow"><span class="pulse"></span> YOUR NEXT LEVEL STARTS HERE</div>
-        <h1>PLAY BEYOND<br><span>THE LIMITS.</span></h1>
-        <p>Upptäck roliga spel, hitta nya favoriter och hoppa rakt in i nästa utmaning.</p>
-        <a class="primary-btn" href="#games">UTFORSKA SPEL <span>→</span></a>
-        <div class="hero-stats"><div><strong>01</strong><small>Hitta ett spel</small></div><i></i><div><strong>02</strong><small>Tryck och spela</small></div><i></i><div><strong>∞</strong><small>Ha kul</small></div></div>
-      </div>
-      <div class="hero-art" aria-hidden="true">
-        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
-        <div class="planet"><div class="planet-shine"></div><div class="planet-ring"></div><span>NX</span></div>
-        <div class="float-chip chip-one">LEVEL UP ✦</div><div class="float-chip chip-two">READY PLAYER?</div>
-        <div class="spark s1">✦</div><div class="spark s2">✧</div><div class="spark s3">✦</div>
-      </div>
-    </section>
-
-    <section class="section" id="games">
-      <div class="section-heading">
-        <div><div class="eyebrow">THE ARCADE</div><h2>HITTA DITT <span>NÄSTA SPEL</span></h2></div>
-        <label class="search"><span>⌕</span><input id="search" type="search" placeholder="Sök bland spelen..." aria-label="Sök bland spelen"></label>
-      </div>
-      <div class="filters" id="categories">
-        <button class="filter active" data-filter="Alla">Alla spel</button>
-        <button class="filter" data-filter="Action">Action</button>
-        <button class="filter" data-filter="Sport">Sport</button>
-        <button class="filter" data-filter="Äventyr">Äventyr</button>
-        <button class="filter" data-filter="Favoriter">♥ Favoriter <span id="fav-count">0</span></button>
-      </div>
-      <div class="game-grid" id="game-grid"></div>
-      <p class="empty" id="empty" hidden>Inga spel matchar din sökning. Testa ett annat ord!</p>
-      <p class="fine-print">Spelen öppnas hos respektive spelutgivare. NOVA X länkar till spelen och hostar inte deras innehåll.</p>
-    </section>
-
-    <section class="banner" id="about"><div class="banner-orb">NX</div><div><div class="eyebrow">WELCOME TO YOUR ARCADE</div><h2>ONE CLICK.<br><span>ENDLESS FUN.</span></h2><p>NOVA X är din plats för att hitta nästa spel att fastna för.</p></div><a href="#games" class="primary-btn">LET'S PLAY →</a></section>
-  </main>
-  <footer><a class="brand" href="#"><span class="brand-mark">N</span><span>NOVA <b>X</b></span></a><span>© <span id="year"></span> NOVA X · Spela schysst.</span><a href="#about">Om sidan ↑</a></footer>
-  <script>
-// Lägg till riktiga speladresser i fältet url när de har verifierats.
-const games = [
-  {id:"wave-rider",name:"Wave Rider",category:"Äventyr",tag:"Äventyr",symbol:"🌊",glow:"#27bde8",description:"Surfa fram genom vågorna och se hur långt du kommer.",url:"",note:"Spellänk läggs till"},
-  {id:"golf-hit",name:"Golf Hit",category:"Sport",tag:"Sport",symbol:"⛳",glow:"#8be66b",description:"Sikta, slå och försök få till det perfekta slaget.",url:"",note:"Spellänk läggs till"},
-  {id:"neon-dash",name:"Neon Dash",category:"Action",tag:"Action",symbol:"⚡",glow:"#d946ef",description:"Snabb arkadkänsla och reflexer på hög nivå.",url:"",note:"Demo-kort"},
-  {id:"star-runner",name:"Star Runner",category:"Äventyr",tag:"Äventyr",symbol:"🚀",glow:"#8b5cf6",description:"Ge dig ut på ett färgstarkt rymdäventyr.",url:"",note:"Demo-kort"},
-  {id:"goal-rush",name:"Goal Rush",category:"Sport",tag:"Sport",symbol:"⚽",glow:"#4ade80",description:"Utmana precisionen och sätt nästa mål.",url:"",note:"Demo-kort"},
-  {id:"pixel-brawl",name:"Pixel Brawl",category:"Action",tag:"Action",symbol:"👾",glow:"#fb7185",description:"En färgstark arkadutmaning med retrovibbar.",url:"",note:"Demo-kort"}
-];
-let filter="Alla", favorites=new Set();
-const grid=document.querySelector("#game-grid"), search=document.querySelector("#search");
-function render(){
- const q=search.value.trim().toLowerCase();
- const visible=games.filter(g=>(filter==="Alla"||g.category===filter||(filter==="Favoriter"&&favorites.has(g.id)))&&(`${g.name} ${g.category} ${g.description}`.toLowerCase().includes(q)));
- grid.innerHTML=visible.map(g=>`<article class="game-card"><div class="game-art" style="--glow:${g.glow}"><span class="game-tag">${g.tag}</span><span class="symbol">${g.symbol}</span><button class="fav ${favorites.has(g.id)?"on":""}" data-fav="${g.id}" aria-label="Favoritmarkera ${g.name}">${favorites.has(g.id)?"♥":"♡"}</button></div><div class="game-info"><h3>${g.name}</h3><p>${g.description}</p><div class="game-bottom"><small>${g.url?"Öppnas externt":g.note}</small>${g.url?`<a class="play-link" href="${g.url}" target="_blank" rel="noopener noreferrer">SPELA ↗</a>`:`<span class="play-link" style="opacity:.55;cursor:default">SNART</span>`}</div></div></article>`).join("");
- document.querySelector("#empty").hidden=visible.length!==0;
- document.querySelector("#fav-count").textContent=favorites.size;
- document.querySelectorAll("[data-fav]").forEach(b=>b.addEventListener("click",()=>{const id=b.dataset.fav;favorites.has(id)?favorites.delete(id):favorites.add(id);render()}));
-}
-document.querySelectorAll(".filter").forEach(b=>b.addEventListener("click",()=>{filter=b.dataset.filter;document.querySelectorAll(".filter").forEach(x=>x.classList.toggle("active",x===b));render()}));
-search.addEventListener("input",render);document.querySelector("#year").textContent=new Date().getFullYear();render();
+<header><div class="logo">NOVA <span>X</span></div><nav><a href="#">Hem</a><a href="#spel">Spel</a><a href="#favoriter">Favoriter</a></nav><input class="search" id="search" placeholder="Sök efter ett spel..." aria-label="Sök efter ett spel"></header>
+<main>
+<section class="hero"><div class="eyebrow">DIN NÄSTA SPELUPPLEVELSE</div><h1>Välkommen till NOVA X</h1><p>Spela, upptäck och ha kul. Hitta ditt nästa favoritspel bland våra utvalda webbläsarspel.</p></section>
+<div class="sectionhead" id="spel"><h2>Utvalda spel</h2><small>7 spel att upptäcka</small></div>
+<section class="grid" id="games">
+<article class="card" data-name="wave rider"><div class="cover c1"><span>WAVE RIDER</span></div><div class="info"><h3>Wave Rider</h3><p>Surfa fram genom banor och undvik hinder.</p><a class="play" href="https://hotgames.io/wave-rider" target="_blank" rel="noopener">Spela</a></div></article>
+<article class="card" data-name="golf hit"><div class="cover c2"><span>GOLF HIT</span></div><div class="info"><h3>Golf Hit</h3><p>Slå bollen så långt du kan och sikta mot rekord.</p><a class="play" href="https://1games.io/Golf-Hit" target="_blank" rel="noopener">Spela</a></div></article>
+<article class="card" data-name="stickman parkour"><div class="cover c3"><span>STICKMAN<br>PARKOUR</span></div><div class="info"><h3>Stickman Parkour</h3><p>Hoppa, spring och ta dig igenom banorna.</p><a class="play" href="https://baddygames.com/games/stickman-parkour/" target="_blank" rel="noopener">Spela</a></div></article>
+<article class="card" data-name="candy blast"><div class="cover c4"><span>CANDY BLAST</span></div><div class="info"><h3>Candy Blast</h3><p>Matcha färgglada godisbitar och klara nivåer.</p><a class="play" href="https://gameforge.com/en-US/littlegames/candy-blast/" target="_blank" rel="noopener">Spela</a></div></article>
+<article class="card" data-name="steal eggs"><div class="cover c5"><span>STEAL EGGS</span></div><div class="info"><h3>Steal Eggs</h3><p>Samla ägg och husdjur i ett fartfyllt spel.</p><a class="play" href="https://www.crazygames.com/game/steal-a-eggs" target="_blank" rel="noopener">Spela</a></div></article>
+<article class="card" data-name="racing online racing legends"><div class="cover c6"><span>RACING<br>ONLINE!</span></div><div class="info"><h3>Racing: Online!</h3><p>Racingkandidat till vår Racing Legends-kategori.</p><a class="play" href="https://www.crazygames.com/game/racing-online-fph" target="_blank" rel="noopener">Spela</a></div></article>
+<article class="card" data-name="bloxd io skyblock"><div class="cover c7"><span>BLOXD.IO<br>SKYBLOCK</span></div><div class="info"><h3>Bloxd.io – Skyblock</h3><p>Bygg och utveckla din egen ö i Skyblock-läget.</p><a class="play" href="https://bloxd.io/" target="_blank" rel="noopener">Spela</a></div></article>
+</section>
+</main><footer>NOVA X · Spela smartare. Spela tillsammans.</footer>
+<script>
+const search=document.getElementById('search');
+search.addEventListener('input',()=>{const q=search.value.trim().toLowerCase();document.querySelectorAll('.card').forEach(card=>{card.hidden=!card.dataset.name.includes(q)});});
 </script>
-</body>
-</html>
+</body></html>
